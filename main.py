@@ -177,7 +177,6 @@ def get_result_dict(google_dict, check_site_dict):
     list_wrong_img = check_img_alt(check_site_dict, list_page_status_code_200, list_empty_title)
     list_external_link = check_satus_cod_200(check_site_dict, list_page_status_code_200)
 
-
     result_analysis = {
         "page_count_comparison": page_count_comparison,
         "list_comparison_title": list_comparison_title,
