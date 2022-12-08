@@ -5,11 +5,11 @@ import cloudscraper
 class JsonRW:
 
     def json_write(self, name, in_dict):
-        with open(f'{name}.json', 'w') as outfile:
+        with open(f'{name}.json', 'w', encoding="utf-8") as outfile:
             json.dump(in_dict, outfile, indent=4, ensure_ascii=False)
 
     def json_read(self, name):
-        with open(f'{name}.json', 'r') as infile:
+        with open(f'{name}.json', 'r', encoding="utf-8") as infile:
             return json.load(infile)
 
 
